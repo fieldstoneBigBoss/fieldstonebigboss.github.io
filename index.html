@@ -1,0 +1,111 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+<title>Hello world!</title>
+<style type="text/css">
+	h1{
+		color:blue;
+	}
+
+	h2{
+		background-color:yellow;
+	}
+
+	h3{
+		border:10px dashed black;
+		transition:color 1s;
+	}
+	h3:hover{
+		border:10px solid blue;
+		color:red;
+	}
+
+	h4{
+		background: linear-gradient(to right,red,yellow);
+	}
+    h5{
+        background:url("http://i.kinja-img.com/gawker-media/image/upload/y6k2hs8svqdlp9vvewxt.jpg");
+        height:500px;
+        background-size:fill;
+    }
+
+
+
+
+</style>
+
+</head>
+
+
+<body>
+<h1>
+
+<p>This is my first website!</p>
+</h1>
+
+<h2>header</h2>
+<h3>header3</h3>
+<h4>header</h4>
+<h5>header</h5>
+<h6>header</h6>
+
+
+<p>
+This
+text
+happens
+on
+a
+few
+lines.
+</p>
+
+<p>
+a really                       big space.
+
+</p>
+
+
+<p id="myParagraph"></p>
+
+<input id="myInput" type="text"></input>
+
+
+<script>
+	//This is all javascript!!!
+	/*this is a block comment.
+	*/
+
+	function updateText(){
+		myParagraph.innerHTML =myInput.value;
+	}
+
+
+	var x=5;
+	x=x+2;
+
+
+	//alert('hello');
+	console.log(x);
+
+	var myParagraph = document.getElementById('myParagraph');
+	myParagraph.innerHTML = x;
+
+	var myInput = document.getElementById('myInput');
+	myInput.oninput = updateText;
+
+
+</script>
+
+
+
+
+</body>
+
+
+
+
+
+
+</html>
